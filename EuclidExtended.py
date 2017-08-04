@@ -1,6 +1,6 @@
 import numpy as np
 
-def GCDExtended(list, coord = None):
+def euclid_extended(list, coord = None):
     """Given list of integers, returns GCD and list of Bezout coefficients.
     Uses a version of the extended Euclidean algorithm that utilizes
     coordinate matrices (from linear algebra)."""
@@ -33,4 +33,4 @@ def GCDExtended(list, coord = None):
 
         coord = coord * A #update coordinates
 
-        return GCDExtended(list, coord)
+        return euclid_extended(list, coord)
